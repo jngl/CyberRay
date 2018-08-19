@@ -8,15 +8,15 @@ namespace cr
 class Sphere : public SceneObject
 {
   public:
-    Sphere(cb::Vector3 p_position, float p_rayon);
+    Sphere(cb::Vector3 p_position, cb::Metre p_rayon);
 
-    float rayon();
-    void setRayon(float p_rayon);
+    cb::Metre rayon();
+    void setRayon(cb::Metre p_rayon);
 
     std::string typeName() override;
 
   private:
-    float m_rayon;
+    cb::Metre m_rayon;
 };
 } // namespace cr
 
