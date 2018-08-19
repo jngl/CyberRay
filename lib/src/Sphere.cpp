@@ -3,10 +3,11 @@
 namespace cr
 {
 
-Sphere::Sphere(cb::Vector3 p_position, cb::Metre p_rayon) :
+Sphere::Sphere(cb::Position p_position, cb::Metre p_rayon) :
     SceneObject(p_position),
     m_rayon(p_rayon) {
-    CB_LOG_INFO << "create sphere";
+    CB_LOG_INFO << "create sphere position=" << position()
+                << " ; rayon=" << m_rayon;
 }
 
 cb::Metre Sphere::rayon() { return m_rayon; }

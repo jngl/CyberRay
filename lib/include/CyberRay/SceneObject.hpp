@@ -13,18 +13,18 @@ class SceneObject
 {
   public:
     SceneObject() = default;
-    SceneObject(cb::Vector3 p_poistion);
+    SceneObject(cb::Position p_poistion);
 
     virtual ~SceneObject();
 
-    cb::Vector3 position();
+    cb::Position position();
 
-    void setPoistion(cb::Vector3 p_position);
+    void setPoistion(cb::Position p_position);
 
     virtual std::string typeName() = 0;
 
   private:
-    cb::Vector3 m_position;
+    cb::Position m_position;
 };
 } // namespace cr
 

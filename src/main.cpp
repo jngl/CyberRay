@@ -6,5 +6,6 @@ int main(int argc, const char **argv) {
 
     cr::Arg arg(argc, argv);
     cr::Scene scene;
-    scene.add(std::make_unique<cr::Sphere>(cb::Vector3{0, 0, 0}, cb::m(1)));
+    scene.add(std::make_unique<cr::Sphere>(
+        cb::Position{cb::m(0), cb::m(0), cb::m(0)}, cb::m(1)));
 }
