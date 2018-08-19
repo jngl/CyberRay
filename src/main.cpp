@@ -1,7 +1,7 @@
 #include <CyberBase.hpp>
 
-int main(){
+int main() {
     cb::addDefaultLogOutput();
-    
-    CB_LOG_INFO<<"Hello";
+
+    CB_LOG_INFO << "Hello";
 }
