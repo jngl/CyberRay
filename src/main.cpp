@@ -1,10 +1,8 @@
 #include <CyberBase.hpp>
 #include <CyberRay.hpp>
 
-int main() {
+int main(int argc, const char **argv) {
     cb::addDefaultLogOutput();
 
-    CB_LOG_INFO << "Hello";
-
-    cr::test();
+    cr::Arg arg(argc, argv);
 }

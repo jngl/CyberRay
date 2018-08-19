@@ -1,9 +1,6 @@
 #ifndef CYBER_RAY_HPP
 #define CYBER_RAY_HPP
 
-namespace cr
-{
-void test();
-}
+#include <CyberRay/Arg.hpp>
 
 #endif // CYBER_RAY_HPP
