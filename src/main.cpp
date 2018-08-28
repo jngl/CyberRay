@@ -7,5 +7,6 @@ int main(int argc, const char **argv) {
     cr::Arg arg(argc, argv);
     cr::Scene scene;
     scene.add(std::make_unique<cr::Sphere>(
-        cb::Position{cb::m(0), cb::m(0), cb::m(0)}, cb::m(1)));
+        cb::Position3<cb::MetreKernel>{cb::m(0), cb::m(0), cb::m(0)},
+        cb::m(1)));
 }

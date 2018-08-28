@@ -8,7 +8,7 @@ namespace cr
 class Sphere : public SceneObject
 {
   public:
-    Sphere(cb::Position p_position, cb::Metre p_rayon);
+    Sphere(cb::Position3<cb::MetreKernel> p_position, cb::Metre p_rayon);
 
     cb::Metre rayon();
     void setRayon(cb::Metre p_rayon);
