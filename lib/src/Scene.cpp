@@ -6,7 +6,7 @@ namespace cr
 {
 Scene::Scene() {}
 void Scene::add(std::unique_ptr<SceneObject> p_object) {
-    CB_LOG_INFO << "add to scene : " << p_object->typeName();
+    CB_LOG_INFO << "add a " << p_object->typeName() << " in the scene";
     m_objects.push_back(std::move(p_object));
 }
 } // namespace cr
